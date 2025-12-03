@@ -103,27 +103,4 @@ Contact: eteteleverse@gmail.com
 
 ---
 
-<!-- ## 🚀 **FINAL SETUP STEPS**
 
-### **Step 6: Create Firebase Accounts**
-
-1. Go to Firebase Console > Authentication > Users
-2. Click "Add User"
-3. Create these accounts:
-
-**Judge Account:**
-```
-
-Email: judge@iotrix.com
-Password: iotrix2025
-
-```
-
-**Admin Accounts (create 5):**
-```
-
-admin1@iotrix.com / admin123
-admin2@iotrix.com / admin123
-admin3@iotrix.com / admin123
-admin4@iotrix.com / admin123
-admin5@iotrix.com / admin123 -->
