@@ -103,7 +103,7 @@ Contact: eteteleverse@gmail.com
 
 ---
 
-## 🚀 **FINAL SETUP STEPS**
+<!-- ## 🚀 **FINAL SETUP STEPS**
 
 ### **Step 6: Create Firebase Accounts**
 
@@ -126,4 +126,4 @@ admin1@iotrix.com / admin123
 admin2@iotrix.com / admin123
 admin3@iotrix.com / admin123
 admin4@iotrix.com / admin123
-admin5@iotrix.com / admin123
+admin5@iotrix.com / admin123 -->
