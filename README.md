@@ -46,12 +46,12 @@ In Firebase Console > Authentication:
 **Judge Account:**
 
 - Email: `judge@iotrix.com`
-- Password: `iotrix2025`
+- Password: set your own password
 
 **Admin Account:**
 
 - Email: `admin1@iotrix.com`
-- Password: `admin123`
+- Password: set your own password
 
 ### 5. Run Development Server
 
@@ -79,12 +79,11 @@ Team Beta,BUET,Automated System,90.0
 
 **Judge Login:**
 
-- Password: `iotrix2025`
+- Set your own password
 
 **Admin Login:**
 
-- Email: `admin1@iotrix.com`
-- Password: `admin123`
+- Set your own password
 
 ## Deployment
 
@@ -98,6 +97,6 @@ vercel --prod
 ## Support
 
 Contact:  [Avishek Chowdhury](https://linkedin.com/in/avishek-chowdhury-avi)
-```
+
 
 
