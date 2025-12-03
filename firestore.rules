@@ -1,27 +1,8 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-    
-    // Teams collection - read by all, write by admins only
-    match /teams/{teamId} {
-      allow read: if true;
-      allow write: if request.auth != null && 
-                   (request.auth.token.email.matches('.*admin.*') || 
-                    request.auth.token.email == 'judge@iotrix.com');
-    }
-    
-    // Scores collection - read by authenticated users, write by judges and admins
-    match /scores/{scoreId} {
-      allow read: if request.auth != null;
-      allow create: if request.auth != null;
-      allow update, delete: if request.auth != null && 
-                             request.auth.token.email.matches('.*admin.*');
-    }
-    
-    // Admins collection - read and write by admins only
-    match /admins/{adminId} {
-      allow read, write: if request.auth != null && 
-                         request.auth.token.email.matches('.*admin.*');
+    match /{document=**} {
+      allow read, write: if false;
     }
   }
 }
