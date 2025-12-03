@@ -1,70 +1,129 @@
-# Getting Started with Create React App
+# IOTrix 2025 - Real-time Judging System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Official judging platform for IOTrix 2025 Phase 2 Final Round.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- ✅ Real-time score updates across all devices
+- ✅ Judge scoring panel with rubrics
+- ✅ Live ranking display (auto-refresh every 60s)
+- ✅ Admin dashboard with CSV import
+- ✅ Score history tracking
+- ✅ Edit/delete score capability
+- ✅ Export results to CSV
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React + Tailwind CSS
+- **Backend**: Firebase (Firestore + Authentication)
+- **Hosting**: Vercel (recommended)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Setup Instructions
 
-### `npm test`
+### 1. Firebase Setup
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Go to [Firebase Console](https://console.firebase.google.com/)
+2. Create new project: "iotrix-2025"
+3. Enable Firestore Database (test mode)
+4. Enable Email/Password Authentication
+5. Copy your Firebase config
 
-### `npm run build`
+### 2. Install Dependencies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+cd frontend
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 3. Configure Firebase
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Edit `frontend/src/firebase/config.js` with your Firebase credentials.
 
-### `npm run eject`
+### 4. Create Initial Accounts
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+In Firebase Console > Authentication:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Judge Account:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Email: `judge@iotrix.com`
+- Password: `iotrix2025`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Admin Account:**
 
-## Learn More
+- Email: `admin1@iotrix.com`
+- Password: `admin123`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 5. Run Development Server
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm start
+```
 
-### Code Splitting
+Visit `http://localhost:3000`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 6. Deploy Firestore Rules
 
-### Analyzing the Bundle Size
+```bash
+firebase deploy --only firestore:rules
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## CSV Format for Team Import
 
-### Making a Progressive Web App
+```csv
+Team Name,University,Project Title,Phase 1 Score
+Team Alpha,CUET,Smart IoT Solution,85.5
+Team Beta,BUET,Automated System,90.0
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Default Credentials
 
-### Advanced Configuration
+**Judge Login:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Password: `iotrix2025`
 
-### Deployment
+**Admin Login:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Email: `admin1@iotrix.com`
+- Password: `admin123`
 
-### `npm run build` fails to minify
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Deploy to Vercel
+
+```bash
+npm run build
+vercel --prod
+```
+
+## Support
+
+Contact: eteteleverse@gmail.com
+
+```
+
+---
+
+## 🚀 **FINAL SETUP STEPS**
+
+### **Step 6: Create Firebase Accounts**
+
+1. Go to Firebase Console > Authentication > Users
+2. Click "Add User"
+3. Create these accounts:
+
+**Judge Account:**
+```
+
+Email: judge@iotrix.com
+Password: iotrix2025
+
+```
+
+**Admin Accounts (create 5):**
+```
+
+admin1@iotrix.com / admin123
+admin2@iotrix.com / admin123
+admin3@iotrix.com / admin123
+admin4@iotrix.com / admin123
+admin5@iotrix.com / admin123
