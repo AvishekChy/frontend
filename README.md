@@ -97,7 +97,7 @@ vercel --prod
 
 ## Support
 
-Contact: linkedin.com/in/avishek-chowdhury-avi
+Contact:  [Avishek Chowdhury](https://linkedin.com/in/avishek-chowdhury-avi)
 ```
 
 
