@@ -97,10 +97,7 @@ vercel --prod
 
 ## Support
 
-Contact: eteteleverse@gmail.com
-
+Contact: linkedin.com/in/avishek-chowdhury-avi
 ```
-
----
 
 
